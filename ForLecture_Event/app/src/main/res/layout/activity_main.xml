@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Widget 이용 예제
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_there"/>
+    <ImageButton
+        android:id="@+id/myImageBtn"
+        android:src="@drawable/android_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/myImageView"
+        android:src="@drawable/android_blue"
+        android:layout_width="500px"
+        android:layout_height="300px"
+        android:scaleType="fitXY"/>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/android_green"
+        android:padding="45dp"
+        android:text="Click me"/>
+</LinearLayout>
+-->
+
+<!-- EditText widget 예제
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#886495ed"
+    android:padding="2dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="#ff1"
+        android:text="login"/>
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your First and Last name"
+        android:layout_marginTop="1dp"
+        android:inputType="textCapWords|textAutoCorrect"
+        android:textSize="18sp"/>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="Login"/>
+</LinearLayout>
+-->
+
+<!-- Check box & Radio button widget 예제 + Menu-
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="6dp">
+    <RadioGroup
+        android:id="@+id/radGroupCoffeeType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/labelType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff993300"
+            android:textSize="17sp"
+            android:text="What type of Coffee do u want?"
+            android:textStyle="bold"/>
+        <RadioButton
+            android:id="@+id/radDecaf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Decaf"/>
+        <RadioButton
+            android:id="@+id/radExpresso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expresso"/>
+        <RadioButton
+            android:id="@+id/radColombian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Colombian"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff993300"
+        android:text="@string/coffe_addons"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="17sp"/>
+    <CheckBox
+        android:id="@+id/chkCream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cream"
+        android:textStyle="bold"/>
+    <CheckBox
+        android:id="@+id/chkSugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sugar"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/btnPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pay"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+    <ToggleButton
+        android:id="@+id/toggleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Turn on"/>
+    <Switch
+        android:id="@+id/switchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Delivery"/>
+</LinearLayout>
+-->
+
+<!-- Fragment first example
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.jackpot.forlecture_event.MainFragment"/>
+
+</LinearLayout>
+-->
+
+<!-- Fragment second example
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <fragment
+        android:name="com.jackpot.forlecture_event.Fragment1"
+        android:id="@+id/fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"/>
+    <fragment
+        android:name="com.jackpot.forlecture_event.Fragment2"
+        android:id="@+id/fragment2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+</RelativeLayout>
+-->
+
+<!-- Widget example
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <WebView
+        android:id="@+id/webKit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
+-->
+
+<!-- List view example
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
+-->
+
+<!-- Spinner example
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+-->
+
+<!-- Lab 3 - 1
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Color"/>
+</LinearLayout>
+-->
+
+<!-- Lab 3 - 2
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="성명"
+        android:textSize="15sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textName"/>
+
+    <TextView
+        android:id="@+id/textGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="성별"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true" />
+    <RadioGroup
+        android:id="@+id/rdGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_toRightOf="@+id/textGender"
+        android:layout_marginLeft="25dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/chkMan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="남"/>
+        <RadioButton
+            android:id="@+id/chkWoman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="여"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="수신여부"
+        android:layout_below="@+id/textGender"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"/>
+    <CheckBox
+        android:id="@+id/chkSms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMS"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/rdGender"
+        android:layout_toRightOf="@+id/textCheck"/>
+    <CheckBox
+        android:id="@+id/chkEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:layout_below="@+id/rdGender"
+        android:layout_toRightOf="@+id/chkSms"/>
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="등록"
+        android:layout_below="@+id/chkSms"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
+-->
+
+<!-- Lab 3 - 3 -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TAB 1" />
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TAB 2" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+</LinearLayout>

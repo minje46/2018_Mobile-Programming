@@ -11,7 +11,47 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+// Bundle 예제
+
+ public class MainActivity extends AppCompatActivity {
+
+     EditText editText;
+     Button button;
+     String str;
+
+     @Override
+     protected void onCreate(Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
+         setContentView(R.layout.activity_main);
+
+         editText = findViewById(R.id.editText);
+         button = findViewById(R.id.button);
+         button.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Intent intent = new Intent(getApplicationContext(), NewActivity.class);
+                 Bundle bundle = new Bundle();
+                 str = editText.getText().toString();
+                 bundle.putString("Name",str);
+                 intent.putExtras(bundle);
+                 startActivityForResult(intent, 1);
+             }
+         });
+     }
+
+     @Override
+     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+         super.onActivityResult(requestCode, resultCode, data);
+         String str = data.getStringExtra("Return");
+         Toast.makeText(getApplicationContext(),"Return : " +str, Toast.LENGTH_SHORT).show();
+     }
+ }
+
+
+
+
 // Lab 2 - 2
+ /*
  public class MainActivity extends AppCompatActivity {
 
      EditText url;
@@ -34,7 +74,7 @@ import android.widget.Toast;
         });
     }
 }
-
+*/
 // Lab 2 - 1
  /*
  public class MainActivity extends AppCompatActivity {

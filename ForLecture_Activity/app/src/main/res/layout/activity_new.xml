@@ -35,7 +35,7 @@
 </LinearLayout>
 -->
 
-<!-- Lab 2 - 2 -->
+<!-- Lab 2 - 2
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/activity_new"
@@ -65,3 +65,22 @@
         android:layout_below="@id/textPrint"
         android:layout_toLeftOf="@id/btnBack"/>
 </RelativeLayout>
+-->
+
+<!--Bundle 예제 -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return"/>
+</LinearLayout>

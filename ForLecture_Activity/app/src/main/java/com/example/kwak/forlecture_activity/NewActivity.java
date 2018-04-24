@@ -6,13 +6,50 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.jar.Attributes;
 
-// Lab 2 - 2 <new activity>
+// Bundle 예제
 
+public class NewActivity extends AppCompatActivity {
+
+    TextView textView;
+    Button button2;
+//    Intent intent;
+//   Bundle bundle;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_new);
+
+        textView = findViewById(R.id.textView);
+        button2 = findViewById(R.id.button);
+
+        final Intent intent = getIntent();
+        final Bundle bundle = intent.getExtras();
+//         Intent intent = getIntent();
+ //        Bundle bundle = intent.getExtras();
+        String data = bundle.getString("Name");
+        textView.setText(data);
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                bundle.putString("Return", "Hello");
+                intent.putExtras(bundle);
+                setResult(RESULT_OK, intent);
+                finish();
+            }
+        });
+    }
+}
+
+// Lab 2 - 2 <new activity>
+/*
 public class NewActivity extends AppCompatActivity {
     TextView textView;
     Button btnGo;
@@ -51,6 +88,7 @@ public class NewActivity extends AppCompatActivity {
         });
     }
 }
+*/
 
 // Lab 2 - 1 <new activity>
 /*
