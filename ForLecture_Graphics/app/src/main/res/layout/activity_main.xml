@@ -155,13 +155,6 @@
             android:text="Base Area"
             android:textSize="40dp"/>
 
-        <Button
-            android:id="@+id/btnOpen"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|right"
-            android:layout_marginTop="200dp"
-            android:text="Open Page" />
     </LinearLayout>
 
     <LinearLayout
@@ -179,13 +172,13 @@
             android:layout_height="wrap_content"
             android:text="Sliding Area"
             android:textSize="40dp"/>
-
-        <Button
-            android:id="@+id/btnClose"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|right"
-            android:layout_marginTop="200dp"
-            android:text="Close Page" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSlide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right"
+        android:text="Open Page" />
+
 </FrameLayout>

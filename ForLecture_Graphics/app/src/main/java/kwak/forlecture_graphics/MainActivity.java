@@ -86,7 +86,8 @@ class MyCanvas extends View{
 public class MainActivity extends AppCompatActivity {
 
     LinearLayout baseLayout, slideLayout;
-    Button btnOpen, btnClose;
+    Button btnSlide;
+    int chage = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -95,24 +96,25 @@ public class MainActivity extends AppCompatActivity {
 
         baseLayout = findViewById(R.id.baseLayout);
         slideLayout = findViewById(R.id.slideLayout);
-        btnOpen = findViewById(R.id.btnOpen);
-        btnClose = findViewById(R.id.btnClose);
+        btnSlide = findViewById(R.id.btnSlide);
 
-        btnOpen.setOnClickListener(new View.OnClickListener() {
+        btnSlide.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Animation anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.left);
-                slideLayout.startAnimation(anim);
-                slideLayout.setVisibility(View.VISIBLE);
-            }
-        });
-
-        btnClose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Animation anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.right);
-                slideLayout.startAnimation(anim);
-                slideLayout.setVisibility(View.INVISIBLE);
+                if(chage == 0){
+                    btnSlide.setText("Close Page");
+                    Animation anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.left);
+                    slideLayout.startAnimation(anim);
+                    slideLayout.setVisibility(View.VISIBLE);
+                    chage = 1;
+                }
+                else{
+                    btnSlide.setText("Open Page");
+                    Animation anim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.right);
+                    slideLayout.startAnimation(anim);
+                    slideLayout.setVisibility(View.INVISIBLE);
+                    chage = 0;
+                }
             }
         });
     }
