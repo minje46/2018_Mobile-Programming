@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Preference example.
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Shared Preferences Login"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/userText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:textSize="20dp"
+        android:layout_marginTop="100dp"/>
+    <EditText
+        android:id="@+id/userInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/userText"
+        android:layout_toRightOf="@+id/userText"/>
+
+    <TextView
+        android:id="@+id/passText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"/>
+    <EditText
+        android:id="@+id/passInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/passText"
+        android:layout_toRightOf="@+id/passText"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passInput"
+        android:layout_marginTop="60dp"
+        android:text="Submit"/>
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passInput"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="110dp"
+        android:layout_toRightOf="@+id/btnSubmit"
+        android:text="Exit"/>
+</RelativeLayout>
+-->
+
+<!-- Internal storage example.
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save File and Close"/>
+
+    <EditText
+        android:id="@+id/textUIdata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|center"/>
+</LinearLayout>
+-->
+
+<!-- Networking example. (Using HTTP request)
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/txtMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼을 누르면 HTTP 연결됩니다. 결과는 아래창에 표시됩니다."/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="사이트 주소 입력..."
+            android:textSize="18dp"/>
+        <Button
+            android:id="@+id/btnRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HTTP request"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/txtResponse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff99ccee"
+            android:textColor="#ff0000ff"
+            android:textSize="12dp"/>
+    </ScrollView>
+</LinearLayout>
+-->
+
+<!-- SQL database example
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+</LinearLayout>
+-->
+
+
+<!-- Audio Player example.
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAY"/>
+    <Button
+        android:id="@+id/btnPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pause"/>
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restart"/>
+</LinearLayout>
+-->
+
+<!-- Video View example.
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/btnVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volume to max"
+        android:layout_gravity="center"/>
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
+-->
+
+<!-- Lab 6 - 1
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/txtData"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="10dp"
+        android:background="#55dddddd"
+        android:padding="10dp"
+        android:gravity="top"
+        android:hint="Enter Some lines of data here..."/>
+    <Button
+        android:id="@+id/btnWrite"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="1. Write SD File"/>
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="2. Clear Screen"/>
+    <Button
+        android:id="@+id/btnRead"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="3. Read SD File"/>
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="4. Finish App"/>
+</LinearLayout>
+-->
+
+<!-- Lab 6 - 2
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*">
+
+    <TableRow>
+        <TextView
+            android:text="Shared Preference example"
+            android:layout_span="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="학번"/>
+        <EditText
+            android:id="@+id/inNum"
+            android:layout_span="2"
+            android:hint="..."/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="이름"/>
+        <EditText
+            android:id="@+id/inName"
+            android:layout_span="2"
+            android:hint="..."/>
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/btnLoad"
+            android:text="불러오기" />
+        <Button
+            android:id="@+id/btnSave"
+            android:text="저장하기"/>
+        <Button
+            android:id="@+id/btnClear"
+            android:text="초기화"/>
+    </TableRow>
+</TableLayout>
+-->
+
+<!-- Lab 6 - 3 -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이름: "
+        android:layout_marginTop="15dp"/>
+    <EditText
+        android:id="@+id/inName"
+        android:layout_toRightOf="@+id/textName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="학번: "
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/textName"/>
+    <EditText
+        android:id="@+id/inNum"
+        android:layout_below="@+id/inName"
+        android:layout_toRightOf="@+id/textNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inNum"
+        android:layout_toStartOf="@+id/btnDelete"
+        android:layout_toLeftOf="@+id/btnDelete"
+        android:text="추가" />
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/inNum"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        android:text="삭제" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_below="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
